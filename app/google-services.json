@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1008940962171",
+    "firebase_url": "https://flutterbiodatacreate-default-rtdb.firebaseio.com",
+    "project_id": "flutterbiodatacreate",
+    "storage_bucket": "flutterbiodatacreate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008940962171:android:4fca302ad20b6e4cd22dde",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008940962171-dt9g2pfrcko2nq2vb35vt56cnv97khei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADjIyqOzIn3txiVHP4mcfAizo29IkTVgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008940962171-dt9g2pfrcko2nq2vb35vt56cnv97khei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008940962171:android:9858c639858595e2d22dde",
+        "android_client_info": {
+          "package_name": "com.jm.jetpackcompose_crud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008940962171-dt9g2pfrcko2nq2vb35vt56cnv97khei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADjIyqOzIn3txiVHP4mcfAizo29IkTVgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008940962171-dt9g2pfrcko2nq2vb35vt56cnv97khei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
