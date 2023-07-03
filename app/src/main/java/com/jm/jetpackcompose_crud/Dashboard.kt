@@ -3,6 +3,7 @@ package com.jm.jetpackcompose_crud
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -10,8 +11,12 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.grid.LazyHorizontalGrid
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.BottomAppBar
+import androidx.compose.material.FloatingActionButton
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,6 +30,15 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.jm.jetpackcompose_crud.component.TopBar
 import com.jm.jetpackcompose_crud.model.RegistrationModel
+import androidx.compose.material3.FabPosition
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.Icon
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.HdrPlus
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.PlusOne
+import androidx.compose.material3.BottomAppBar
 
 
 @Composable
@@ -39,6 +53,31 @@ fun DashboardPg(navController: NavController){
     Scaffold(
         Modifier.statusBarsPadding(),
         topBar = { TopBar(screenName = "DashBoard" , navController = navController,  destination = "login") },
+        bottomBar = {
+            BottomAppBar(
+                modifier = Modifier
+                    .height(50.dp)
+                    .fillMaxWidth(),
+
+
+                ) {
+                NavigationBarItem(selected = true, onClick = {
+                    darkTheme = true
+                },
+                    icon = {Icon(
+                        Icons.Default.Home, "", Modifier.size(25.dp),
+                    )}
+                )
+            }
+        },
+        floatingActionButton = {
+            FloatingActionButton(onClick = { darkTheme = false
+                Log.e("Tag", " ==>  "+ darkThemes )
+            },) {
+                Icon(Icons.Default.Add,"", Modifier.size(35.dp),)
+            }
+        },
+        floatingActionButtonPosition = FabPosition.Center,
         content = {it
             Bodyp(navController)
         }

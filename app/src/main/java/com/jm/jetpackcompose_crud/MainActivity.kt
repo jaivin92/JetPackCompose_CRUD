@@ -66,7 +66,7 @@ class MainActivity : ComponentActivity() {
 fun PageList(){
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = "login", builder = {
+    NavHost(navController = navController, startDestination = "dashboard", builder = {
         composable("login" , content =  { LoginPg(navController = navController )})
         composable("registration" , content =  { RegistationPg(navController = navController )})
         composable("dashboard" , content =  { Dashboard(navController = navController )})
